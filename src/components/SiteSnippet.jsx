@@ -9,7 +9,7 @@ export const SiteSnippet = withRouter(({ match: { params } }) => {
   const snippet = `<script
   data-sc-options
   data-chat-id="${params.siteId}"
-  src="js/site-chat.js"
+  src="${process.env.REACT_APP_SNIPPET_SRC}"
   type="text/javascript">
 </script>`;
 
