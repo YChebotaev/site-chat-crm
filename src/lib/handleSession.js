@@ -8,6 +8,7 @@ export const handleSession = authResult => {
     objectStorage.setItem("idToken", authResult.idToken);
     objectStorage.setItem("expiresIn", authResult.expiresIn);
   } else {
+    console.error("No authResult");
     debugger;
   }
 };
